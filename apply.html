@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="safety-officers.html">Safety Officers</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="engineers.html">Engineers</a></li>
+                <li><a href="administrative.html">Administrative Roles</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="compliance.html">Compliance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Job Application Form</h1>
+        <form action="submit-application.php" method="POST" enctype="multipart/form-data">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <label for="position">Position Applying For:</label>
+            <select id="position" name="position" required>
+                <option value="Safety Officer">Safety Officer</option>
+                <option value="Operator">Operator</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Administrative">Administrative</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Compliance">Compliance</option>
+            </select><br>
+
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Zambia Mining Jobs</p>
+    </footer>
+</body>
+</html>
